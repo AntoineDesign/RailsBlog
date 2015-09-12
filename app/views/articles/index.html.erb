@@ -1,4 +1,4 @@
-<h1> All Articles </h1>
+<h1 class="header"> All Articles </h1>
 
 <ul id="articles">
   <% @articles.each do |article| %>
@@ -7,4 +7,7 @@
   </li>
   <% end %>
 </ul>
-<%= link_to "Create a new Article", new_article_path, class: "new_article" %>
+<br>
+<div class="create-new-article">
+<%= link_to "Create a new Article", new_article_path, class: "btn btn-primary" %>
+</div>
