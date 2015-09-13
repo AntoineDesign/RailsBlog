@@ -8,6 +8,16 @@
  }
  .articles {
    text-align: center;
+   padding: 25px;
+   list-style-type: none;
+   word-wrap: break-word;
+ }
+ .excerpt {
+   text-align: center;
+   font-weight: 100;
+ }
+ .read-more {
+   text-align: center;
  }
  .create-new-article {
     text-align: center;
@@ -24,6 +34,7 @@
  .post-body {
    text-align: center;
    font-weight: 200;
+   padding: 40px;
  }
  .article-btn {
    text-align: center;
@@ -48,6 +59,6 @@
    text-align: center;
  }
 
- .cancel-article-button {
+ .save-article-button {
    text-align: center;
  }

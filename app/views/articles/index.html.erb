@@ -1,10 +1,16 @@
 <h1 class="header"> All Articles </h1>
-
-<ul id="articles">
+<br>
+<ul class="articles">
   <% @articles.each do |article| %>
-  <li>
-    <%= link_to article.title, article_path(article) %>
+  <h2><%= article.title %></h2>
+  <li class="excerpt">
+    <%= sanitize(truncate(article.body, length: 650)) %>
+    <br>
+    <div class="read-more">
+    <%= link_to "Read more", article_path(article), class: 'btn btn-primary btn-xs' %>
+  </div>
   </li>
+  <br>
   <% end %>
 </ul>
 <br>

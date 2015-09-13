@@ -1,0 +1,21 @@
+<%= form_for(@article) do |f| %>
+  <ul>
+    <% @article.errors.full_messages.each do |error| %>
+      <li class="alert alert-dismissible alert-danger"><%= error %></li>
+    <% end %>
+  </ul>
+    <p class="title-form" >
+      <%= f.label :title, class: 'form-title' %><br>
+      <%= f.text_field :title, :placeholder => "Title", class: 'form-control', id: 'inputDefault' %>
+    </p>
+    <p class="body-form">
+      <%= f.label :body, class: 'body-title' %><br>
+      <%= f.text_area :body, :placeholder => "Content goes here", class: 'form-control', rows: '2', id: 'textArea' %>
+    </p>
+     <p class="new-article-button">
+       <%= f.submit 'Create Post', :class => 'btn btn-primary' %>
+    </p>
+    <p class="save-article-button">
+      <%= f.submit 'Update Post', :class => 'btn btn-primary' %>
+    </p>
+<% end %>
