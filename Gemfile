@@ -33,6 +33,7 @@ end
 group :production do
   gem 'pg', '~> 0.18.3'
   gem 'rails_12factor', '~> 0.0.3'
+  gem 'puma', '~> 2.13.4'
 end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
