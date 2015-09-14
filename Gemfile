@@ -27,11 +27,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Use unicorn as the app server
 # gem 'unicorn'
-group :development, :test do
+group :development, :test  do
   gem 'sqlite3'
 end
 group :production do
-  gem 'pg', '~> 0.18.3',
+  gem 'pg', '~> 0.18.3'
   gem 'rails_12factor', '~> 0.0.3'
 end
 # Use Capistrano for deployment
