@@ -1,0 +1,12 @@
+<% if @article.errors.any? %>
+  <div id="error_explain">
+    <div class="alert alert-dismissable alert-danger">
+      Article can not be posted due to these errors <%= pluralize(@article.errors.count, "error") %>.
+    </div>
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

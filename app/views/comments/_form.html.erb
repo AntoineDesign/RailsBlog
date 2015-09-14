@@ -1,0 +1,15 @@
+<h3 class="post-title">Post a comment</h3>
+
+<%= form_for [ @article, @comment ] do |f| %>
+<p class="title-form" >
+  <%= f.label :author_name, class: 'form-title' %><br>
+  <%= f.text_field :author_name, :placeholder => "Author", class: 'form-control', id: 'inputDefault' %>
+</p>
+<p class="body-form">
+  <%= f.label :body, class: 'body-title' %><br>
+  <%= f.text_area :body, :placeholder => "Comment Goes here", class: 'form-control', rows: '2', id: 'textArea' %>
+</p>
+ <p class="new-article-button">
+   <%= f.submit 'Post Comment', :class => 'btn btn-primary' %>
+</p>
+<% end %>
