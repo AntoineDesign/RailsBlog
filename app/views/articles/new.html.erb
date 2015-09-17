@@ -8,14 +8,17 @@
   <div class="row">
     <form class="col s12">
       <div class="row">
-          <p class="title-form">
-          <%= f.label :title, class: 'placeholder' %><br>
-          <%= f.text_field :title, :placeholder => "Title", class: 'mdl-textfield--floating-label' %>
-          </p>
-          <p class="body-form">
-            <%= f.label :body, class: 'body-title' %><br>
-            <%= f.text_area :body, :placeholder => "Content goes here", id: 'textarea1', class: 'materialize-textarea' %>
-          </p>
+          <div class="input-field col s6">
+            <%= f.label :title, class: 'form-title' %><br>
+            <%= f.text_field :title, class: 'validate' %>
+          </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <%= f.label :body, class: 'body-title' %><br>
+              <%= f.text_area :body, :placeholder => "Content goes here", id: 'textarea1', class: 'materialize-textarea' %>
+            </div>
+          </div>
            <p class="new-article-button">
              <%= f.submit 'Create Post', :class => 'btn btn-primary' %>
           </p>

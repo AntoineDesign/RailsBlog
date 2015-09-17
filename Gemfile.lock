@@ -116,7 +116,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  materialize-sass (~> 0.97.0)
+  materialize-sass
   pg (~> 0.18.3)
   puma (~> 2.13.4)
   rails (= 4.1.8)
