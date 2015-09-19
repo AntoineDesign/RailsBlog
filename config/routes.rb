@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'users/new'
 
   root 'articles#index'
+  get 'signup' => 'users#new'
+  get '/users' => 'users#index'
+  resources :users
   resources :articles do
-    resources :comments
+  resources :comments
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
